@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project</title>
+    <!--fav-icon---------------->
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+    <!--using FontAwesome--------------->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+    <!--CSS file-->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav> 
+            <div class="navigation">
+            <!--logo-->
+                <a href="index.html" class="logo"><img  alt="photo of a teddy bear" src="images/logo.svg"/></a>
+            <!--menu-icon-->
+                <div class="toggle"></div>
+            <!--menu-->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a>
+                    <li><a href="toys.html">Toys</a>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            <!--icons-menu-->
+                <div class="right-menu">
+                    <a href="javascript:void(0);" class="search" aria-label="search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="cart.html" aria-label="shopping cart">
+                        <i class="fas fa-shopping-cart">
+                    <span id="small-basket"></span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="search-bar">
+            <!--search-input-->
+            <div class="search-input">
+                <input type="text" placeholder="Search" name="search" />
+                <!--cancel-btn-->
+                <a href="javascript:void(0);" class="search-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class='main-content items-container'>
+        <section class="one-item">
+            <div class="item-img">
+                <img  id='changedPicture' src="images/puzzle1.png" alt="letters puzzle">
+            </div>
+            <ul class="item-list">
+                <li> 
+                    <img src="images/puzzle2.png" alt="letters puzzle" onclick="ChangeImage('images/puzzle2.png')">
+                </li>
+                <li> 
+                    <img src="images/puzzle3.png" alt="letters puzzle" onclick="ChangeImage('images/puzzle3.png')">
+                </li>
+                <li>
+                    <video id='puzzle-video' autoplay loop muted>
+                        <source  src="images/puzzle-video.mp4" type="video/mp4" onclick="openVideo()">
+                    </video>
+                </li>
+                <li> 
+                    <img src="images/puzzle1.png" alt="letters puzzle" onclick="ChangeImage('images/puzzle1.png')">
+                </li>
+            </ul>
+
+            <div id='myModal'>
+                <span class="close">&times;</span>
+                <video  class='my-video' id='puzzle-video' autoplay loop muted controls>
+                    <source  src="images/puzzle-video.mp4" type="video/mp4" onclick="openVideo()">
+                </video>
+            </div>
+
+            <div class="item-info"> 
+                <p class="item-name">Puzzle Arabic</p>
+                <div class="product-rev">
+                    <img src="https://img.icons8.com/fluency/33/000000/star.png"/><img src="https://img.icons8.com/fluency/33/000000/star.png"/><img src="https://img.icons8.com/fluency/33/000000/star.png"/><img src="https://img.icons8.com/color/33/000000/star--v1.png"/><img src="https://img.icons8.com/color/33/000000/star--v1.png"/>
+                </div>
+                <p class="item-price">200 Kr</p>
+                <button class="shop" onclick="addToBasket(this, 'p1','Puzzle', 200, 'images/puzzle1.png')">add to cart</button>
+                <p class="item-des">
+                    Puzzle Arabic Children Toddlers Kids Puzzles Letters The Alphabet Perfect for Preschool & Kindergarten Classrooms Include Arabic Version – DAR Rawan
+                    <br> Size : Product Dimensions : 3.7" x 4.6" Inches = 9 X11.5 cm
+                </p>
+            </div>
+        </section>
+
+        <section class="product">
+            <h2 class="product-category">You may like</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <a href="sale1.html">
+                        <div class="product-image">
+                            <span class="discount-tag">50% off</span>
+                            <img src="images/peppa1.png" class="product-thumb" alt="photo of peppa pig">
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <p class="product-short-des">Peppa pig</p>
+                        <button class="card-btn" onclick="addToBasket(this, 's1','Peppa Pig', 100, 'images/peppa1.png')" >add to cart</button>
+                        <div class="product-rev"><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt="" /><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt=""/>
+                        </div>
+                        <span class="price">100 Kr</span><span class="actual-price">200 Kr</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="sale2.html">
+                        <div class="product-image">
+                            <span class="discount-tag">75% off</span>
+                            <img src="images/little-tiger.png" class="product-thumb" alt="little tiger bok">
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <p class="product-short-des">The little tiger</p>
+                        <button class="card-btn" onclick="addToBasket(this, 's2','The little tiger', 25, 'images/little-tiger.png')" >add to cart</button>
+                        <div class="product-rev"><img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt=""/><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt=""/>
+                        </div>
+                        <span class="price">25 Kr</span><span class="actual-price">100 Kr</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="sale3.html">
+                        <div class="product-image">
+                            <span class="discount-tag">50% off</span>
+                            <img src="images/white-car1.png" class="product-thumb" alt="photo of white car">
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <p class="product-short-des">Lamborghini</p>
+                        <button class="card-btn" onclick="addToBasket(this, 's3','Lamborghini', 150, 'images/white-car1.png')" >add to cart</button>
+                        <div class="product-rev"><img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt=""/><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt=""/>
+                        </div>
+                        <span class="price">150 Kr</span><span class="actual-price">300 Kr</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--added to cart message-->
+    <section id='popup'>
+    <img src="https://img.icons8.com/flat-round/40/000000/checkmark.png"/>            <p> Added to Cart</p>
+    </section>
+    </main>
+    <!--footer-->
+    <footer class="social-call">
+        <!--social-links-->
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="facebook link"><i class="fab fa-facebook-f fa-lg"></i> </a>
+            <a href="https://www.instagram.com/?hl=en"  target="_blank" aria-label="instagram link"></a><i class="fab fa-instagram fa-lg"></i> </a>
+        </div>
+        <!--phone-number-->
+        <div class="phone">
+        <span>Contact support: +00467123456</span>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <script src="video.js"></script> 
+    <script src="script.js"></script>
+    <script src="webshop.js"></script>
+</body>
+</html>

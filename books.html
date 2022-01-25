@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Books</title>
+    <!--fav-icon---------------->
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+    <!--using FontAwesome--------------->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+    <!--CSS file-->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav> 
+            <div class="navigation">
+            <!--logo-->
+                <a href="index.html" class="logo"><img  alt="photo of a teddy bear" src="images/logo.svg"/></a>
+            <!--menu-icon-->
+                <div class="toggle"></div>
+            <!--menu-->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a>
+                    <li><a href="toys.html">Toys</a>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            <!--icons-menu-->
+                <div class="right-menu">
+                    <a href="javascript:void(0);" class="search" aria-label="search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="cart.html" aria-label="shopping cart">
+                        <i class="fas fa-shopping-cart">
+                    <span id="small-basket"></span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="search-bar">
+            <!--search-input-->
+            <div class="search-input">
+                <input type="text" placeholder="Search" name="search" />
+                <!--cancel-btn-->
+                <a href="javascript:void(0);" class="search-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class='main-content'>
+        <section class="product">
+            <h2 class="product-category">Books:</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <a href="bok1.html">
+                        <div class="product-image">
+                            <img src="images/firstbok1.png" class="product-thumb" alt="children bok ">
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <p class="product-short-des">Children bok</p>
+                        <button class="card-btn" onclick="addToBasket(this, 'b1','children bok', 50, 'images/firstbok1.png')" >add to cart</button>
+                        <div class="product-rev"><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt="" /><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt=""/>
+                        </div>
+                        <span class="price">50 Kr</span>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <a href="bok2.html">
+                        <div class="product-image">
+                            <img src="images/secondbok.png" class="product-thumb" alt="play titut bok">
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <p class="product-short-des">Play titut bok</p>
+                        <button class="card-btn" onclick="addToBasket(this, 'b2','play titut bok', 50, 'images/secondbok.png')" >add to cart</button>
+                        <div class="product-rev"><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt="" /><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt=""/>
+                        </div>
+                        <span class="price">50 Kr</span>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <a href="bok3.html">
+                        <div class="product-image">
+                            <img src="images/thirdbok1.png" class="product-thumb" alt="tut tut bok">
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <p class="product-short-des">Tut tut bok  </p>
+                        <button class="card-btn" onclick="addToBasket(this, 'b3','tut tut bok', 50, 'images/thirdbok1.png')" >add to cart</button>
+                        <div class="product-rev"><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt="" /><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt=""/>
+                        </div>
+                        <span class="price">50 Kr</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="bok4.html">
+                        <div class="product-image">
+                            <img src="images/fourthbok.png" class="product-thumb" alt="we wash the car ">
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <p class="product-short-des">We wash the car</p>
+                        <button class="card-btn" onclick="addToBasket(this, 'b4','we wash the car', 50, 'images/fourthbok.png')" >add to cart</button>
+                        <div class="product-rev"><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt="" /><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt=""/>
+                        </div>
+                        <span class="price">50 Kr</span>
+                    </div>
+                </div>
+             
+            </div>
+        </section>
+        <!--added to cart message-->
+        <section id='popup'>
+        <img src="https://img.icons8.com/flat-round/40/000000/checkmark.png" alt=""/>            <p> Added to Cart</p>
+        </section>
+    </main>
+    <!--footer-->
+    <footer class="social-call">
+        <!--social-links-->
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="facebook link"><i class="fab fa-facebook-f fa-lg"></i> </a>
+            <a href="https://www.instagram.com/?hl=en"  target="_blank" aria-label="instagram link"><i class="fab fa-instagram fa-lg"></i> </a>
+        </div>
+        <!--phone-number-->
+        <div class="phone">
+        <span>Contact support: +00467123456</span>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+    <script src="script.js"></script>
+    <script src="webshop.js"></script>
+    
+</html>

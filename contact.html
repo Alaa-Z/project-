@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project</title>
+    <!--fav-icon---------------->
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+    <!--using FontAwesome--------------->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+    <!--CSS file-->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav> 
+            <div class="navigation">
+            <!--logo-->
+                <a href="index.html" class="logo"><img  alt="photo of a teddy bear" src="images/logo.svg"/></a>
+            <!--menu-icon-->
+                <div class="toggle"></div>
+            <!--menu-->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a>
+                    <li><a href="toys.html">Toys</a>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            <!--icons-menu-->
+                <div class="right-menu">
+                    <a href="javascript:void(0);" class="search" aria-label="search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="cart.html" aria-label="shopping cart">
+                        <i class="fas fa-shopping-cart">
+                    <span id="small-basket"></span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="search-bar">
+            <!--search-input-->
+            <div class="search-input">
+                <input type="text" placeholder="Search" name="search" />
+                <!--cancel-btn-->
+                <a href="javascript:void(0);" class="search-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class='contact-container main-content'>
+        <section class="contact">
+            <article class="contact-info">
+                <h1>
+                Contact us 
+                </h1>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i><b> Address:</b> Sankt Petri kyrkogata 6, 222 21 Lund Sweden
+                </p>
+                <p>
+                    <i class="fas fa-phone-volume"></i><b> Phone:</b> 00467123456
+                </p>
+                <p>
+                    <i class="fas fa-at"></i><b> E-mail:</b> toy.store@mail.com
+                </p>
+            </article>
+            <article class="contact-form">
+                <h1>Send us a message</h1>
+                  <form >
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+                
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+                
+                    <label for="msg">Message</label><br>
+                    <textarea id="msg" name="msg">  </textarea><br>
+                    <button class="send" type="button"> Send</button>
+                  </form>                
+            </article>
+
+        </section>
+       
+        
+    </main>
+     <!--footer-->
+     <footer class="social-call">
+        <!--social-links-->
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="facebook link"><i class="fab fa-facebook-f fa-lg"></i> </a>
+            <a href="https://www.instagram.com/?hl=en"  target="_blank" aria-label="instagram link"><i class="fab fa-instagram fa-lg"></i> </a>
+        </div>
+        <!--phone-number-->
+        <div class="phone">
+        <span>Contact support: +00467123456</span>
+        </div>
+    </footer>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script></body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+
+
+    
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Third toy </title>
+    <!--fav-icon---------------->
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+    <!--using FontAwesome--------------->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+    <!--CSS file-->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav> 
+            <div class="navigation">
+            <!--logo-->
+                <a href="index.html" class="logo"><img  alt="photo of a teddy bear" src="images/logo.svg"/></a>
+            <!--menu-icon-->
+                <div class="toggle"></div>
+            <!--menu-->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a>
+                    <li><a href="toys.html">Toys</a>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            <!--icons-menu-->
+                <div class="right-menu">
+                    <a href="javascript:void(0);" class="search" aria-label="search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="cart.html" aria-label="shopping cart">
+                        <i class="fas fa-shopping-cart">
+                    <span id="small-basket"></span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="search-bar">
+            <!--search-input-->
+            <div class="search-input">
+                <input type="text" placeholder="Search" name="search" />
+                <!--cancel-btn-->
+                <a href="javascript:void(0);" class="search-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+     <!--Go back btn-->
+     <button class="goBack"onclick="history.back()">
+        <img  src="https://img.icons8.com/material-outlined/70/000000/circled-left--v2.png" alt="" />
+    </button>
+    <main class='main-content items-container'>
+        <section class="one-item">
+            <div class="item-img">
+                <img  id='changedPicture' src="images/van1.png" alt="van Volkswagen ">
+            </div>
+            <ul class="item-list">
+                <li> 
+                    <img src="images/van2.png" alt="van Volkswagen" onclick="ChangeImage('images/van2.png')">
+                </li>
+                <li> 
+                    <img src="images/van3.png" alt="van Volkswagen" onclick="ChangeImage('images/van3.png')">
+                </li>
+                <li>
+                    <img src="images/van1.png" alt="van Volkswagen" onclick="ChangeImage('images/van1.png')">
+                </li>
+            </ul>
+            <div class="item-info"> 
+                <p class="item-name"> Volkswagen Van</p>
+                <div class="product-rev">
+                    <img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt=""/><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt=""/>
+                </div>
+                <div>
+                    <p class="item-price"> 100 Kr</p>
+                </div>
+                <button class="shop" onclick="addToBasket(this, 't2','rose car', 100, 'images/rose-car1.png')">add to cart</button>
+                <p class="item-des">
+                    Hang ten with the Volkswagen Van Special Edition. This limited edition surfer van features special collectible details, including chrome detailing and a unique serial number stamped into the underside of the van. Open the side doors to reveal a fully-equipped mini kitchen, fold-down seating that converts into a sleeping area, and plenty of storage space.
+                </p>
+            </div>
+        </section>
+
+        <section class="product">
+            <h2 class="product-category">You may like</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <a href="toy2.html">
+                        <div class="product-image">
+                            <img src="images/rose-car1.png" class="product-thumb" alt="rose car">
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <p class="product-short-des">Green Volkswagen car</p>
+                        <button class="card-btn" onclick="addToBasket(this, 't1','green car', 100, 'images/green-car1.png')" >add to cart</button>
+                        <div class="product-rev"><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt="" /><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt=""/>
+                        </div>
+                        <span class="price">100 Kr</span>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <a href="toy1.html">
+                        <div class="product-image">
+                            <img src="images/green-car1.png" class="product-thumb" alt="green-car">
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <p class="product-short-des">Green Volkswagen car</p>
+                        <button class="card-btn" onclick="addToBasket(this, 't1','green car', 100, 'images/green-car1.png')" >add to cart</button>
+                        <div class="product-rev"><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt="" /><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt=""/>
+                        </div>
+                        <span class="price">100 Kr</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="toy4.html">
+                        <div class="product-image">
+                            <img src="images/lego1.png" class="product-thumb" alt="lego ninja">
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <p class="product-short-des">Lego ninja</p>
+                        <button class="card-btn" onclick="addToBasket(this, 't4','lego', 100, 'images/lego1.png')" >add to cart</button>
+                        <div class="product-rev"><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt="" /><img src="https://img.icons8.com/fluency/33/000000/star.png" alt=""/><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt="" /><img src="https://img.icons8.com/color/33/000000/star--v1.png" alt=""/>
+                        </div>
+                        <span class="price">150 Kr</span>
+                    </div>
+                </div>
+               
+               
+
+            </div>
+        </section>
+        <!--added to cart message-->
+        <section id='popup'>
+        <img src="https://img.icons8.com/flat-round/40/000000/checkmark.png" alt=""/>            <p> Added to Cart</p>
+        </section>
+    </main>
+    <!--footer-->
+    <footer class="social-call">
+        <!--social-links-->
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="facebook link"><i class="fab fa-facebook-f fa-lg"></i> </a>
+            <a href="https://www.instagram.com/?hl=en"  target="_blank" aria-label="instagram link"><i class="fab fa-instagram fa-lg"></i> </a>
+        </div>
+        <!--phone-number-->
+        <div class="phone">
+        <span>Contact support: +00467123456</span>
+        </div>
+    </footer>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script src="webshop.js"></script>
+
+
+
+</body>
+    
+</html>
